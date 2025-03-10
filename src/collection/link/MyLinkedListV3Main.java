@@ -1,0 +1,29 @@
+package collection.link;
+
+public class MyLinkedListV3Main {
+
+    public static void main(String[] args) {
+        MyLinkedListV3<String> list = new MyLinkedListV3<>();
+
+        list.add("a");
+        list.add("b");
+        list.add("c");
+        System.out.println(list);
+
+        System.out.println("첫번쨰 항목에 추가");
+        list.add(0, "d");
+        System.out.println(list);
+
+        System.out.println("첫번쨰 항목에 삭제");
+        list.remove(0);
+        System.out.println(list);
+
+        System.out.println("중간 항목에 추가");
+        list.add(1, "e");
+        System.out.println(list);
+
+        System.out.println("증간 항목에 삭제");
+        list.remove(1);
+        System.out.println(list);
+    }
+}
